@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en" style="--brand: #00C2FF;">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Wealth × AQL — Project Proposal & Invoice</title>
+  <meta name="description" content="Apex Wealth CRM Dashboard — a private proposal and project summary prepared by AQL. Valid until Apr 30, 2026." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="author" content="AQL" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <meta name="theme-color" content="#0A0A0B" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AQL" />
+  <meta property="og:url" content="https://proposal-apex-wealth-71c7b8.vercel.app/" />
+  <meta property="og:title" content="Apex Wealth × AQL — Project Proposal" />
+  <meta property="og:description" content="Apex Wealth CRM Dashboard · Prepared privately by AQL." />
+  <meta property="og:image" content="https://proposal-apex-wealth-71c7b8.vercel.app/og-image.png" />
+  <meta property="og:image:secure_url" content="https://proposal-apex-wealth-71c7b8.vercel.app/og-image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Proposal preview for Apex Wealth — prepared by AQL." />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Apex Wealth × AQL" />
+  <meta name="twitter:description" content="Apex Wealth CRM Dashboard · Prepared privately by AQL." />
+  <meta name="twitter:image" content="https://proposal-apex-wealth-71c7b8.vercel.app/og-image.png" />
+  <meta name="twitter:image:alt" content="Proposal preview for Apex Wealth." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500;600&family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --bg: #0A0A0B;
+      --bg-1: #111114;
+      --ink: #EDEDEF;
+      --muted: #A1A1A6;
+      --dim: #5E5E63;
+      --hair: rgba(255, 255, 255, 0.06);
+      --hair-strong: rgba(255, 255, 255, 0.12);
+      --green: #34D399;
+      --gold: #F5B041;
+    }
+
+    * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    html, body { background: var(--bg); color: var(--ink); }
+
+    body {
+      font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+      font-feature-settings: "ss01", "cv11";
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .serif { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; }
+    .serif-i { font-family: "Instrument Serif", Georgia, serif; font-style: italic; }
+    .mono { font-family: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace; font-feature-settings: "zero"; }
+
+    .grain::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+      mix-blend-mode: overlay;
+      opacity: 0.35;
+    }
+
+    .hero-atmosphere {
+      background:
+        radial-gradient(ellipse 60% 50% at 15% 30%, color-mix(in srgb, var(--brand) 20%, transparent), transparent 60%),
+        radial-gradient(ellipse 50% 40% at 85% 75%, color-mix(in srgb, var(--brand) 10%, transparent), transparent 60%),
+        linear-gradient(180deg, #050506 0%, #0A0A0B 80%);
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, var(--hair-strong) 20%, var(--hair-strong) 80%, transparent 100%);
+    }
+
+    .label {
+      font-family: "JetBrains Mono", ui-monospace, monospace;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .label::before {
+      content: "";
+      width: 1.75rem;
+      height: 1px;
+      background: var(--brand);
+      display: inline-block;
+    }
+
+    .scope-list { counter-reset: s; list-style: none; padding: 0; margin: 0; }
+    .scope-list li {
+      counter-increment: s;
+      display: grid;
+      grid-template-columns: 3.25rem 1fr;
+      gap: 1.5rem;
+      padding: 1.75rem 0;
+      border-bottom: 1px solid var(--hair);
+      transition: background 0.5s cubic-bezier(0.16, 1, 0.3, 1), padding 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .scope-list li::before {
+      content: counter(s, decimal-leading-zero);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--brand);
+      padding-top: 0.35rem;
+      letter-spacing: 0.08em;
+    }
+    .scope-list li:hover { background: rgba(255, 255, 255, 0.015); padding-left: 0.75rem; padding-right: 0.75rem; }
+    .scope-list li strong {
+      font-family: "Manrope", sans-serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--ink);
+      display: block;
+      letter-spacing: -0.005em;
+    }
+    .scope-list li .scope-detail {
+      display: block;
+      color: var(--muted);
+      margin-top: 0.35rem;
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    .price-big {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-style: italic;
+      font-size: clamp(3.5rem, 14vw, 12rem);
+      line-height: 0.85;
+      letter-spacing: -0.035em;
+      background: linear-gradient(180deg, var(--ink) 0%, color-mix(in srgb, var(--brand) 70%, white) 90%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 20px 80px color-mix(in srgb, var(--brand) 25%, transparent));
+    }
+
+    .invoice-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 1.1rem 0;
+      border-bottom: 1px solid var(--hair);
+      gap: 1rem;
+    }
+    .invoice-row .inv-label {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+    .invoice-row .inv-label small {
+      display: block;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.72rem;
+      color: var(--dim);
+      margin-top: 0.2rem;
+    }
+    .invoice-row .inv-amount {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+    .invoice-row.subtotal { border-top: 1px solid var(--hair-strong); padding-top: 1.4rem; }
+    .invoice-row.subtotal .inv-amount { color: var(--brand); font-size: 1.1rem; font-weight: 600; }
+    .invoice-row.deduction .inv-amount { color: var(--green); }
+    .invoice-row.total {
+      border-top: 2px solid var(--brand);
+      border-bottom: none;
+      padding-top: 1.5rem;
+      padding-bottom: 0;
+    }
+    .invoice-row.total .inv-label { color: var(--ink); font-weight: 600; font-size: 1.05rem; }
+    .invoice-row.total .inv-amount {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--brand);
+      text-shadow: 0 0 30px color-mix(in srgb, var(--brand) 40%, transparent);
+    }
+
+    .pricing-card {
+      padding: 2rem;
+      border: 1px solid var(--hair);
+      border-radius: 16px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.025), rgba(255,255,255,0) 80%);
+      transition: border-color 0.4s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
+    }
+    .pricing-card:hover {
+      border-color: color-mix(in srgb, var(--brand) 50%, var(--hair-strong));
+      transform: translateY(-3px);
+      box-shadow: 0 20px 50px -20px color-mix(in srgb, var(--brand) 25%, transparent);
+    }
+    .pricing-card .card-price {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-style: italic;
+      font-size: 2.5rem;
+      line-height: 1;
+      color: var(--ink);
+    }
+    .pricing-card .card-unit {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+    }
+    .pricing-card .card-title {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-bottom: 1rem;
+    }
+
+    .copy-btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.5rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--hair-strong);
+      border-radius: 12px;
+      color: var(--ink);
+      font-family: "Manrope", sans-serif;
+      font-size: 1.05rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s, border-color 0.3s, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      user-select: all;
+      -webkit-user-select: all;
+    }
+    .copy-btn:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: var(--brand);
+      transform: translateY(-2px);
+    }
+    .copy-btn:active { transform: translateY(0); }
+    .copy-btn .copy-icon { color: var(--brand); flex-shrink: 0; }
+    .copy-btn .copied-toast {
+      position: absolute;
+      top: -2.5rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      background: var(--brand);
+      color: #0A0A0B;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .copy-btn.copied .copied-toast { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    .wu-step {
+      display: flex;
+      gap: 1.25rem;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--hair);
+    }
+    .wu-step:last-child { border-bottom: none; }
+    .wu-step .step-num {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--brand);
+      min-width: 2rem;
+      padding-top: 0.15rem;
+    }
+    .wu-step .step-label {
+      font-weight: 500;
+      color: var(--ink);
+      font-size: 0.95rem;
+    }
+    .wu-step .step-detail {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 0.2rem;
+    }
+
+    .btn-primary {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 1.15rem 1.9rem;
+      background: var(--brand);
+      color: #0A0A0B;
+      font-family: "JetBrains Mono", monospace;
+      font-weight: 600;
+      font-size: 0.88rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        0 0 0 1px color-mix(in srgb, var(--brand) 80%, white 20%),
+        0 24px 60px -18px color-mix(in srgb, var(--brand) 70%, transparent);
+      white-space: nowrap;
+    }
+    .btn-primary::after {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 50% 100%, var(--brand), transparent 70%);
+      opacity: 0;
+      transition: opacity 0.4s;
+      z-index: -1;
+      filter: blur(18px);
+    }
+    .btn-primary:hover { transform: translateY(-2px); }
+    .btn-primary:hover::after { opacity: 0.7; }
+    .btn-primary:active { transform: translateY(0); }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 1.15rem 1.9rem;
+      color: var(--ink);
+      font-family: "JetBrains Mono", monospace;
+      font-weight: 500;
+      font-size: 0.88rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--hair-strong);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.02);
+      transition: background 0.4s, border-color 0.4s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-ghost:hover { background: rgba(255, 255, 255, 0.05); border-color: var(--ink); transform: translateY(-2px); }
+
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--brand);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    @keyframes driftDown { 0%, 100% { transform: translateY(0); opacity: 0.5; } 50% { transform: translateY(8px); opacity: 1; } }
+    .drift { animation: driftDown 2.6s cubic-bezier(0.45, 0, 0.55, 1) infinite; }
+
+    .hero-h1 {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-size: clamp(2.75rem, 9vw, 9rem);
+      line-height: 0.92;
+      letter-spacing: -0.025em;
+      font-weight: 400;
+    }
+
+    .term-row { display: flex; justify-content: space-between; align-items: baseline; padding: 1rem 0; border-bottom: 1px solid var(--hair); gap: 1rem; }
+    .term-row dt { font-family: "JetBrains Mono", monospace; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+    .term-row dd { color: var(--ink); font-size: 0.95rem; text-align: right; }
+
+    .logo-box { color: var(--brand); }
+    .logo-box svg { height: 22px; width: auto; }
+
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      z-index: 9999;
+      background: linear-gradient(90deg, var(--brand), color-mix(in srgb, var(--brand) 60%, white));
+      box-shadow: 0 0 12px color-mix(in srgb, var(--brand) 60%, transparent);
+      transition: width 0.08s linear;
+      pointer-events: none;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 1rem;
+      border-radius: 999px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .status-badge.complete {
+      background: rgba(52, 211, 153, 0.12);
+      color: var(--green);
+      border: 1px solid rgba(52, 211, 153, 0.25);
+    }
+    .status-badge.complete::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--green);
+      box-shadow: 0 0 10px var(--green);
+    }
+    .status-badge.upcoming {
+      background: rgba(245, 176, 65, 0.1);
+      color: var(--gold);
+      border: 1px solid rgba(245, 176, 65, 0.2);
+    }
+    .status-badge.upcoming::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--gold);
+      box-shadow: 0 0 10px var(--gold);
+    }
+
+    .note-box {
+      padding: 1.25rem 1.5rem;
+      border-left: 2px solid var(--brand);
+      background: rgba(0, 194, 255, 0.04);
+      border-radius: 0 10px 10px 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .print-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--muted);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--hair);
+      border-radius: 999px;
+      background: transparent;
+      cursor: pointer;
+      transition: border-color 0.3s, color 0.3s;
+    }
+    .print-btn:hover { border-color: var(--brand); color: var(--ink); }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    ::selection { background: var(--brand); color: #0A0A0B; }
+
+    @media print {
+      .scroll-progress, .grain::before, .drift, .print-btn, header, footer { display: none !important; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .hero-atmosphere { background: #fff !important; }
+      body, html { background: #fff !important; color: #111 !important; }
+      * { color-adjust: exact; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      section { break-inside: avoid; }
+      .btn-primary, .btn-ghost { box-shadow: none !important; border: 2px solid #111 !important; }
+    }
+  </style>
+</head>
+<body class="grain">
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="relative z-10 px-6 md:px-12 pt-6 md:pt-8 flex items-center justify-between">
+    <div class="logo-box">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="AQL logo">
+        <text x="0" y="24" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="22" font-weight="700" letter-spacing="0.02em" fill="currentColor">AQL<tspan font-weight="300" opacity="0.5">/ai</tspan></text>
+      </svg>
+    </div>
+    <div class="mono text-[0.62rem] md:text-[0.7rem] uppercase tracking-[0.22em] text-zinc-500 flex items-center gap-2 md:gap-3">
+      <span style="width:6px;height:6px;border-radius:999px;background:var(--brand);box-shadow:0 0 10px var(--brand);"></span>
+      <span class="hidden sm:inline">Private &middot;</span> Valid until Apr 30, 2026
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- 01 / HERO                                                          -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <section class="hero-atmosphere relative overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.04]" style="background-image: linear-gradient(to right, var(--hair-strong) 1px, transparent 1px), linear-gradient(to bottom, var(--hair-strong) 1px, transparent 1px); background-size: 80px 80px;"></div>
+    <div class="relative z-10 px-6 md:px-12 pt-12 md:pt-24 pb-16 md:pb-36 max-w-[1400px] mx-auto min-h-[70vh] md:min-h-[85vh] flex flex-col justify-center">
+      <div class="label reveal">01 &nbsp;/&nbsp; Proposal &nbsp;&middot;&nbsp; Apr 16, 2026</div>
+      <h1 class="hero-h1 reveal mt-8 md:mt-10">
+        Apex Wealth<br />
+        <span class="serif-i" style="color: var(--brand);">CRM Dashboard</span>
+      </h1>
+      <div class="mt-8 md:mt-12 flex flex-wrap items-center gap-x-6 gap-y-3 reveal">
+        <span class="status-badge complete">Phase 1 Complete</span>
+        <span class="hidden md:inline-block" style="width:1px;height:14px;background:var(--hair-strong);"></span>
+        <span class="mono text-xs uppercase tracking-[0.22em] text-zinc-400">Prepared for Khaled</span>
+        <span class="hidden md:inline-block" style="width:1px;height:14px;background:var(--hair-strong);"></span>
+        <span class="mono text-xs uppercase tracking-[0.22em] text-zinc-500">By AQL</span>
+      </div>
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 drift text-zinc-500 z-10">
+      <svg width="13" height="22" viewBox="0 0 13 22" fill="none" stroke="currentColor" stroke-width="1">
+        <path d="M6.5 1v19M1 15l5.5 5.5L12 15" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- 02 / PROJECT OVERVIEW                                              -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <section class="relative z-10 px-6 md:px-12 py-14 md:py-28 max-w-[1400px] mx-auto">
+    <div class="label mb-10 reveal">02 &nbsp;/&nbsp; Project Overview</div>
+    <div class="grid md:grid-cols-12 gap-8 md:gap-16">
+      <div class="md:col-span-2 mono text-[0.7rem] uppercase tracking-[0.22em] text-zinc-600 pt-2 reveal">Context</div>
+      <div class="md:col-span-10 reveal">
+        <p style="font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(1.4rem, 2.8vw, 2.4rem); line-height: 1.3; color: #D4D4D8; font-weight: 400;">
+          AQL built a full-stack CRM dashboard for Apex Wealth &mdash; a production-ready financial advisory platform with real-time pipeline management, Calendly integration, team collaboration, and comprehensive client lifecycle tracking.
+        </p>
+        <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="text-center p-4 rounded-xl" style="background: rgba(255,255,255,0.02); border: 1px solid var(--hair);">
+            <div class="mono text-2xl font-semibold" style="color: var(--brand);">12</div>
+            <div class="mono text-[0.65rem] uppercase tracking-[0.2em] text-zinc-500 mt-1">Core Modules</div>
+          </div>
+          <div class="text-center p-4 rounded-xl" style="background: rgba(255,255,255,0.02); border: 1px solid var(--hair);">
+            <div class="mono text-2xl font-semibold" style="color: var(--brand);">9</div>
+            <div class="mono text-[0.65rem] uppercase tracking-[0.2em] text-zinc-500 mt-1">Pipeline Stages</div>
+          </div>
+          <div class="text-center p-4 rounded-xl" style="background: rgba(255,255,255,0.02); border: 1px solid var(--hair);">
+            <div class="mono text-2xl font-semibold" style="color: var(--brand);">8</div>
+            <div class="mono text-[0.65rem] uppercase tracking-[0.2em] text-zinc-500 mt-1">Pages Built</div>
+          </div>
+          <div class="text-center p-4 rounded-xl" style="background: rgba(255,255,255,0.02); border: 1px solid var(--hair);">
+            <div class="mono text-2xl font-semibold" style="color: var(--brand);">Real-time</div>
+            <div class="mono text-[0.65rem] uppercase tracking-[0.2em] text-zinc-500 mt-1">Live Sync</div>
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="mono text-[0.65rem] uppercase tracking-[0.12em] px-3 py-1.5 rounded-full" style="background: rgba(0,194,255,0.08); color: var(--brand); border: 1px solid rgba(0,194,255,0.15);">React 19</span>
+          <span class="mono text-[0.65rem] uppercase tracking-[0.12em] px-3 py-1.5 rounded-full" style="background: rgba(0,194,255,0.08); color: var(--brand); border: 1px solid rgba(0,194,255,0.15);">TypeScript</span>
+          <span class="mono text-[0.65rem] uppercase tracking-[0.12em] px-3 py-1.5 rounded-full" style="background: rgba(0,194,255,0.08); color: var(--brand); border: 1px solid rgba(0,194,255,0.15);">Supabase</span>
+          <span class="mono text-[0.65rem] uppercase tracking-[0.12em] px-3 py-1.5 rounded-full" style="background: rgba(0,194,255,0.08); color: var(--brand); border: 1px solid rgba(0,194,255,0.15);">Vite</span>
+          <span class="mono text-[0.65rem] uppercase tracking-[0.12em] px-3 py-1.5 rounded-full" style="background: rgba(0,194,255,0.08); color: var(--brand); border: 1px solid rgba(0,194,255,0.15);">Recharts</span>
+          <span class="mono text-[0.65rem] uppercase tracking-[0.12em] px-3 py-1.5 rounded-full" style="background: rgba(0,194,255,0.08); color: var(--brand); border: 1px solid rgba(0,194,255,0.15);">Calendly API</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-[1400px] mx-auto px-6 md:px-12"><div class="divider"></div></div>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- 03 / WHAT WE BUILT                                                 -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <section class="relative z-10 px-6 md:px-12 py-14 md:py-28 max-w-[1400px] mx-auto">
+    <div class="grid md:grid-cols-12 gap-8 md:gap-16">
+      <div class="md:col-span-4 reveal">
+        <div class="label mb-6">03 &nbsp;/&nbsp; What We Built</div>
+        <h2 class="serif text-4xl md:text-5xl leading-[1.05]" style="letter-spacing: -0.02em;">
+          Every feature<br /><span class="serif-i" style="color: var(--brand);">delivered.</span>
+        </h2>
+        <p class="text-zinc-400 mt-6 text-sm leading-relaxed max-w-sm">
+          Phase 1 is complete. Below is the full inventory of everything built, tested, and ready for cloud deployment.
+        </p>
+      </div>
+      <div class="md:col-span-8 reveal">
+        <ol class="scope-list">
+          <li><div>
+            <strong>Dashboard &amp; Analytics</strong>
+            <span class="scope-detail">KPI metrics (leads, pipeline, conversions, AUM), 30/60/90-day activity trends, pipeline distribution &amp; donut charts, meetings timeline, health monitoring (stalled &amp; stuck clients, no-shows, cancellations), client source breakdown, recent activity feed.</span>
+          </div></li>
+          <li><div>
+            <strong>Pipeline / Sales Funnel</strong>
+            <span class="scope-detail">9-stage animated funnel visualization (Lead &rarr; FC1 &rarr; FC2 &rarr; FC3 &rarr; Closed/Lost), click-to-expand stages, real-time search, per-stage conversion rates, inline client creation.</span>
+          </div></li>
+          <li><div>
+            <strong>Clients Management</strong>
+            <span class="scope-detail">Searchable list view with multi-field filtering &amp; sorting, bulk CSV export, color-coded stage cards, days-in-stage badges, advisor assignment display.</span>
+          </div></li>
+          <li><div>
+            <strong>Client Detail &amp; Journey</strong>
+            <span class="scope-detail">Full client profile, visual journey timeline across all pipeline stages with dates, cancellation/no-show counts, onboarding status, AUM tracking, next review date, inline activity timeline with notes.</span>
+          </div></li>
+          <li><div>
+            <strong>Calendar &amp; Meetings</strong>
+            <span class="scope-detail">Upcoming &amp; past meeting tabs with timezone conversion, video meeting join URLs, advisor info, search/filter, activity history integration.</span>
+          </div></li>
+          <li><div>
+            <strong>Tasks &mdash; Kanban Board</strong>
+            <span class="scope-detail">Three-column drag-and-drop board (To Do / In Progress / Done), priority levels (Low/Medium/High), due dates, client linking, role-based task visibility.</span>
+          </div></li>
+          <li><div>
+            <strong>Team Profiles</strong>
+            <span class="scope-detail">Advisor cards with performance metrics (active pipeline, meetings/month, AUM managed, conversion rate), expandable pipeline breakdown bar charts per advisor.</span>
+          </div></li>
+          <li><div>
+            <strong>Settings &amp; Admin Panel</strong>
+            <span class="scope-detail">Profile management with avatar upload, team member CRUD (add/delete advisors), password-gated developer features, timezone configuration.</span>
+          </div></li>
+          <li><div>
+            <strong>Calendly Integration</strong>
+            <span class="scope-detail">Full API integration via Supabase Edge Function proxy, auto event-type mapping to pipeline stages, AUM extraction from booking forms, no-show &amp; cancellation detection, incremental &amp; full sync engine with rate limiting.</span>
+          </div></li>
+          <li><div>
+            <strong>Authentication &amp; RBAC</strong>
+            <span class="scope-detail">Supabase Auth login portal, Admin vs Member role-based access control, animated splash screen, protected routes, session persistence &amp; management.</span>
+          </div></li>
+          <li><div>
+            <strong>Real-time Sync Engine</strong>
+            <span class="scope-detail">PostgreSQL real-time subscriptions with 800ms debounced updates, optimistic UI state, Row Level Security policies ready for production tightening.</span>
+          </div></li>
+          <li><div>
+            <strong>Responsive UI &amp; Design System</strong>
+            <span class="scope-detail">Glass-panel dark theme, custom CSS design system with brand variables, mobile-first responsive layouts, loading states, error boundaries, accessibility considerations.</span>
+          </div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-[1400px] mx-auto px-6 md:px-12"><div class="divider"></div></div>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- 04 / INVESTMENT BREAKDOWN                                          -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <section id="investment" class="relative z-10 px-6 md:px-12 py-14 md:py-32 max-w-[1400px] mx-auto">
+    <div class="text-center mb-16">
+      <div class="label mb-8 reveal justify-center inline-flex">04 &nbsp;/&nbsp; Investment</div>
+      <div class="mono text-xs uppercase tracking-[0.2em] text-zinc-500 mb-4 reveal">Phase 1 &middot; Balance Due</div>
+      <div class="price-big reveal">$1,473<span style="font-size: 0.4em; vertical-align: super; -webkit-text-fill-color: var(--muted); letter-spacing: 0;">.22</span></div>
+    </div>
+
+    <div class="max-w-2xl mx-auto reveal">
+      <div class="mono text-[0.7rem] uppercase tracking-[0.18em] text-zinc-500 mb-4">Fee Breakdown</div>
+
+      <div class="invoice-row">
+        <div class="inv-label">
+          CRM Dashboard &mdash; Full Setup
+          <small>Design, development, Supabase backend, Calendly integration</small>
+        </div>
+        <div class="inv-amount">$1,000.00</div>
+      </div>
+
+      <div class="invoice-row">
+        <div class="inv-label">
+          Additional Users &times; 2
+          <small>$300 per user &mdash; platform configuration &amp; onboarding</small>
+        </div>
+        <div class="inv-amount">$600.00</div>
+      </div>
+
+      <div class="invoice-row subtotal">
+        <div class="inv-label" style="font-weight: 500; color: var(--ink);">Subtotal</div>
+        <div class="inv-amount">$1,600.00</div>
+      </div>
+
+      <div class="invoice-row deduction">
+        <div class="inv-label">
+          Payment Received
+          <small>$200 CAD via bank transfer &rarr; 465.67 AED received after fees &rarr; converted to USD</small>
+        </div>
+        <div class="inv-amount">&minus;$126.78</div>
+      </div>
+
+      <div class="invoice-row total">
+        <div class="inv-label">Balance Due</div>
+        <div class="inv-amount">$1,473.22</div>
+      </div>
+    </div>
+
+    <div class="max-w-2xl mx-auto mt-8 reveal">
+      <div class="note-box">
+        <strong style="color: var(--ink);">Note:</strong> The original $200 CAD payment converted to 523.42 AED, but only 465.67 AED was received after bank transfer fees. The deduction reflects the actual amount received, converted at the current AED/USD rate.
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-[1400px] mx-auto px-6 md:px-12"><div class="divider"></div></div>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- 05 / MONTHLY RETAINER                                              -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <section class="relative z-10 px-6 md:px-12 py-14 md:py-28 max-w-[1400px] mx-auto">
+    <div class="reveal">
+      <div class="label mb-6">05 &nbsp;/&nbsp; Ongoing Costs</div>
+      <h2 class="serif text-4xl md:text-5xl leading-[1.05] mb-4" style="letter-spacing: -0.02em;">
+        Monthly <span class="serif-i" style="color: var(--brand);">retainer.</span>
+      </h2>
+      <p class="text-zinc-400 text-sm mb-12 max-w-xl">
+        After deployment, the following monthly costs apply for hosting, maintenance, and per-user platform access.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 reveal">
+      <div class="pricing-card">
+        <div class="card-title">Base Platform</div>
+        <div class="card-price">$30</div>
+        <div class="card-unit mt-2">/ month</div>
+        <div class="mt-4 text-zinc-400 text-sm leading-relaxed">
+          Dashboard hosting, database, real-time sync, Calendly proxy, maintenance &amp; updates.
+        </div>
+      </div>
+
+      <div class="pricing-card">
+        <div class="card-title">Standard User</div>
+        <div class="card-price">$7</div>
+        <div class="card-unit mt-2">/ user / month</div>
+        <div class="mt-4 text-zinc-400 text-sm leading-relaxed">
+          Full platform access &mdash; dashboard, pipeline, clients, calendar, tasks, team views.
+        </div>
+      </div>
+
+      <div class="pricing-card" style="border-color: rgba(0, 194, 255, 0.2);">
+        <div class="card-title" style="color: var(--gold);">AI-Enabled User</div>
+        <div class="flex items-baseline gap-2">
+          <div class="card-price">$15</div>
+        </div>
+        <div class="card-unit mt-2">/ user / month <span style="color: var(--gold);">($7 + $8 AI)</span></div>
+        <div class="mt-4 text-zinc-400 text-sm leading-relaxed">
+          Everything in Standard, plus AI-powered replying &amp; rescheduling assistant for client communications.
+        </div>
+        <div class="status-badge upcoming mt-4" style="font-size: 0.6rem;">Available in Phase 2</div>
+      </div>
+    </div>
+
+    <div class="mt-10 reveal">
+      <div class="note-box">
+        <strong style="color: var(--ink);">Scaling:</strong> Each additional user added to the platform costs a one-time <strong style="color: var(--brand);">$300 setup fee</strong> plus their monthly rate ($7 standard or $15 with AI).
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-[1400px] mx-auto px-6 md:px-12"><div class="divider"></div></div>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- 06 / FUTURE PHASE: AI                                              -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <section class="relative z-10 px-6 md:px-12 py-14 md:py-28 max-w-[1400px] mx-auto">
+    <div class="grid md:grid-cols-12 gap-8 md:gap-16">
+      <div class="md:col-span-5 reveal">
+        <div class="label mb-6">06 &nbsp;/&nbsp; Next Phase</div>
+        <h2 class="serif text-4xl md:text-5xl leading-[1.05]" style="letter-spacing: -0.02em;">
+          AI <span class="serif-i" style="color: var(--brand);">Assistant.</span>
+        </h2>
+        <p class="text-zinc-400 mt-6 text-sm leading-relaxed">
+          Phase 2 introduces an AI-powered communication layer that can automatically reply to clients and reschedule meetings on behalf of your advisors &mdash; reducing manual follow-up and improving response times.
+        </p>
+        <div class="status-badge upcoming mt-6">Upcoming &mdash; Phase 2</div>
+      </div>
+      <div class="md:col-span-7 reveal">
+        <div class="mono text-[0.7rem] uppercase tracking-[0.18em] text-zinc-500 mb-5">Phase 2 Pricing</div>
+
+        <div class="invoice-row">
+          <div class="inv-label">
+            AI Feature Setup
+            <small>One-time integration of AI replying &amp; rescheduling engine into the dashboard</small>
+          </div>
+          <div class="inv-amount">$100.00</div>
+        </div>
+
+        <div class="invoice-row">
+          <div class="inv-label">
+            AI Per-User Monthly
+            <small>Additional cost per user who needs AI assistant capabilities</small>
+          </div>
+          <div class="inv-amount">+$8.00<span class="text-zinc-500 text-xs"> /user/mo</span></div>
+        </div>
+
+        <div class="invoice-row" style="border-bottom: none;">
+          <div class="inv-label">
+            New User Setup
+            <small>Each additional user added to the platform (one-time)</small>
+          </div>
+          <div class="inv-amount">$300.00<span class="text-zinc-500 text-xs"> /user</span></div>
+        </div>
+
+        <div class="mt-6 note-box">
+          <strong style="color: var(--ink);">Example:</strong> Adding 1 new advisor with AI capabilities = $300 (setup) + $15/month ($7 standard + $8 AI). The AI feature itself requires a one-time $100 setup for the entire dashboard.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-[1400px] mx-auto px-6 md:px-12"><div class="divider"></div></div>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- 07 / PAYMENT INSTRUCTIONS                                          -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <section id="payment" class="relative z-10 px-6 md:px-12 py-14 md:py-32 max-w-[1400px] mx-auto">
+    <div class="text-center mb-14">
+      <div class="label mb-8 reveal justify-center inline-flex">07 &nbsp;/&nbsp; Payment</div>
+      <h2 class="serif text-4xl md:text-6xl leading-[1.05] reveal" style="letter-spacing: -0.02em;">
+        Send via <span class="serif-i" style="color: var(--brand);">Western Union.</span>
+      </h2>
+      <p class="text-zinc-400 mt-4 text-sm max-w-lg mx-auto reveal">
+        Please send the balance due to the name below. After completing the transfer, share the details listed in the checklist via WhatsApp or Telegram.
+      </p>
+    </div>
+
+    <div class="max-w-2xl mx-auto">
+      <!-- Receiver name - copyable -->
+      <div class="text-center mb-10 reveal">
+        <div class="mono text-[0.7rem] uppercase tracking-[0.18em] text-zinc-500 mb-4">Receiver Full Name &mdash; Click to Copy</div>
+        <button class="copy-btn mx-auto" id="copyName" onclick="copyReceiverName()">
+          <span class="copy-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </span>
+          <span id="nameText">Ahmed Ibrahim Elbahy Ali Hassan Moussa</span>
+          <span class="copied-toast">Copied!</span>
+        </button>
+      </div>
+
+      <!-- Transfer details -->
+      <div class="reveal">
+        <div class="grid md:grid-cols-2 gap-5 mb-8">
+          <div class="p-5 rounded-xl" style="background: rgba(255,255,255,0.02); border: 1px solid var(--hair);">
+            <div class="mono text-[0.65rem] uppercase tracking-[0.18em] text-zinc-500 mb-2">Receiving Country</div>
+            <div class="text-lg font-medium">Egypt</div>
+          </div>
+          <div class="p-5 rounded-xl" style="background: rgba(255,255,255,0.02); border: 1px solid var(--hair);">
+            <div class="mono text-[0.65rem] uppercase tracking-[0.18em] text-zinc-500 mb-2">Amount to Send</div>
+            <div class="text-lg font-medium" style="color: var(--brand);">$1,473.22 USD</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- After sending checklist -->
+      <div class="reveal">
+        <div class="mono text-[0.7rem] uppercase tracking-[0.18em] text-zinc-500 mb-5">After Sending &mdash; Please Provide</div>
+
+        <div class="wu-step">
+          <div class="step-num">01</div>
+          <div>
+            <div class="step-label">MTCN (Money Transfer Control Number)</div>
+            <div class="step-detail">The unique 10-digit tracking number. You will receive this after completing the Western Union transfer.</div>
+          </div>
+        </div>
+
+        <div class="wu-step">
+          <div class="step-num">02</div>
+          <div>
+            <div class="step-label">Sender&rsquo;s Full Name &amp; Country</div>
+            <div class="step-detail">Your full name as it appears on the transfer, and the sending country (Canada).</div>
+          </div>
+        </div>
+
+        <div class="wu-step">
+          <div class="step-num">03</div>
+          <div>
+            <div class="step-label">Transfer Amount</div>
+            <div class="step-detail">Confirm the exact amount sent so we can verify receipt.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center reveal">
+        <a href="https://wa.me/2001002311909?text=Hi%20Ahmed%2C%20I%27ve%20sent%20the%20Western%20Union%20payment.%20Here%20are%20the%20details%3A%0A%0AMTCN%3A%20%0ASender%20Name%3A%20%0AAmount%3A%20" target="_blank" rel="noopener noreferrer" class="btn-primary w-full sm:w-auto justify-center">
+          Send Details via WhatsApp
+          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-[1400px] mx-auto px-6 md:px-12"><div class="divider"></div></div>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- 08 / TERMS & CONTACT                                               -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <section class="relative z-10 px-6 md:px-12 py-14 md:py-28 max-w-[1400px] mx-auto">
+    <div class="label mb-10 reveal">08 &nbsp;/&nbsp; Terms &amp; Contact</div>
+    <div class="grid md:grid-cols-2 gap-12 md:gap-20">
+      <div class="reveal">
+        <h3 class="serif text-3xl md:text-4xl mb-8" style="letter-spacing: -0.015em;">
+          <span class="serif-i" style="color: var(--brand);">Clear</span> terms.
+        </h3>
+        <dl>
+          <div class="term-row"><dt>Payment Method</dt><dd>Western Union to Egypt</dd></div>
+          <div class="term-row"><dt>Balance Due</dt><dd style="color: var(--brand); font-weight: 600;">$1,473.22 USD</dd></div>
+          <div class="term-row"><dt>Monthly Retainer</dt><dd>$30/mo base + $7/user/mo</dd></div>
+          <div class="term-row"><dt>New User Setup</dt><dd>$300 per user (one-time)</dd></div>
+          <div class="term-row"><dt>AI Add-on</dt><dd>$100 setup + $8/user/mo</dd></div>
+          <div class="term-row"><dt>Valid Until</dt><dd>Apr 30, 2026</dd></div>
+          <div class="term-row" style="border-bottom:none;"><dt>Next Step</dt><dd>Deployment upon payment receipt</dd></div>
+        </dl>
+      </div>
+      <div class="reveal">
+        <h3 class="serif text-3xl md:text-4xl mb-8" style="letter-spacing: -0.015em;">
+          Questions?<br />
+          <span class="serif-i" style="color: var(--brand);">Reach out directly.</span>
+        </h3>
+        <p class="text-zinc-400 leading-relaxed mb-8 max-w-md">
+          Contact Ahmed via email or WhatsApp. Once payment is confirmed, we&rsquo;ll begin the cloud deployment process immediately.
+        </p>
+        <div class="flex flex-col gap-4">
+          <a
+            href="mailto:ahmed.ibrahim.elbahy@gmail.com?subject=Re:%20Apex%20Wealth%20CRM%20Proposal"
+            class="mono inline-flex items-center gap-3 text-sm md:text-base pb-1 border-b-2 transition-colors hover:text-white"
+            style="border-color: var(--brand); color: var(--brand);"
+          >
+            ahmed.ibrahim.elbahy@gmail.com
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/>
+            </svg>
+          </a>
+          <a
+            href="https://wa.me/2001002311909"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mono inline-flex items-center gap-3 text-sm md:text-base pb-1 border-b-2 transition-colors hover:text-white"
+            style="border-color: var(--green); color: var(--green);"
+          >
+            WhatsApp &middot; +20 100 231 1909
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative z-10 px-6 md:px-12 py-10 border-t" style="border-color: var(--hair);">
+    <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row md:items-center justify-between gap-6 text-zinc-600 mono text-[0.7rem] uppercase tracking-[0.22em]">
+      <div class="logo-box opacity-70">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="AQL logo">
+          <text x="0" y="24" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="22" font-weight="700" letter-spacing="0.02em" fill="currentColor">AQL<tspan font-weight="300" opacity="0.5">/ai</tspan></text>
+        </svg>
+      </div>
+      <div>&copy; <span id="y"></span> AQL &middot; AI Automation &amp; Transformation Partner</div>
+      <div class="flex items-center gap-4">
+        <span>Prepared Apr 16, 2026</span>
+        <button onclick="window.print()" class="print-btn" aria-label="Save as PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+          Save PDF
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    // Copy receiver name
+    function copyReceiverName() {
+      const name = "Ahmed Ibrahim Elbahy Ali Hassan Moussa";
+      navigator.clipboard.writeText(name).then(() => {
+        const btn = document.getElementById("copyName");
+        btn.classList.add("copied");
+        setTimeout(() => btn.classList.remove("copied"), 2000);
+      }).catch(() => {
+        // Fallback for older browsers
+        const range = document.createRange();
+        range.selectNode(document.getElementById("nameText"));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        const btn = document.getElementById("copyName");
+        btn.classList.add("copied");
+        setTimeout(() => btn.classList.remove("copied"), 2000);
+      });
+    }
+
+    // Intersection Observer for reveal animations
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("in");
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -60px 0px" }
+    );
+    document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+
+    // Hero staggered reveal
+    const heroEls = document.querySelectorAll("section.hero-atmosphere .reveal");
+    heroEls.forEach((el, i) => setTimeout(() => el.classList.add("in"), 120 + i * 140));
+
+    // Scroll progress bar
+    const bar = document.querySelector(".scroll-progress");
+    window.addEventListener("scroll", () => {
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      if (h > 0) bar.style.width = (window.scrollY / h * 100) + "%";
+    }, { passive: true });
+
+    // Confetti on primary CTA hover
+    const brandColor = getComputedStyle(document.documentElement).getPropertyValue("--brand").trim();
+    function spawnConfetti(btn) {
+      const rect = btn.getBoundingClientRect();
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      for (let i = 0; i < 12; i++) {
+        const p = document.createElement("span");
+        p.className = "confetti-particle";
+        p.style.position = "fixed";
+        p.style.pointerEvents = "none";
+        p.style.zIndex = "100";
+        const size = 3 + Math.random() * 5;
+        const angle = (Math.PI * 2 / 12) * i + (Math.random() - 0.5) * 0.5;
+        const dist = 30 + Math.random() * 40;
+        const tx = Math.cos(angle) * dist;
+        const ty = Math.sin(angle) * dist - 20;
+        const rot = Math.random() * 360;
+        const colors = [brandColor, "#fff", brandColor, "rgba(255,255,255,0.7)"];
+        Object.assign(p.style, {
+          width: size + "px",
+          height: size * (Math.random() > 0.5 ? 1 : 0.4) + "px",
+          background: colors[i % colors.length],
+          left: cx + "px",
+          top: cy + "px",
+          boxShadow: `0 0 6px ${brandColor}`,
+          borderRadius: Math.random() > 0.5 ? "999px" : "1px",
+        });
+        p.animate([
+          { transform: "translate(0,0) rotate(0) scale(1)", opacity: 1 },
+          { transform: `translate(${tx}px,${ty}px) rotate(${rot}deg) scale(0.2)`, opacity: 0 }
+        ], { duration: 600, easing: "cubic-bezier(0.16,1,0.3,1)", fill: "forwards" });
+        document.body.appendChild(p);
+        setTimeout(() => p.remove(), 650);
+      }
+    }
+    let confettiThrottle = false;
+    document.querySelectorAll(".btn-primary").forEach(btn => {
+      btn.addEventListener("mouseenter", () => {
+        if (confettiThrottle) return;
+        confettiThrottle = true;
+        spawnConfetti(btn);
+        setTimeout(() => confettiThrottle = false, 800);
+      });
+    });
+  </script>
+</body>
+</html>
