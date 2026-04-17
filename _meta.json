@@ -5,12 +5,15 @@
   "agency": "aql",
   "agency_name": "AQL",
   "price": 1600,
+  "balance_due_usd": 1473.22,
+  "payment_received_aed": 465.67,
+  "payment_received_usd": 126.78,
   "currency": "USD",
   "timeline": "Phase 1 Complete",
   "deposit_percent": 50,
   "deposit_amount": 800,
   "valid_until": "2026-04-30T18:02:12.295Z",
   "created_at": "2026-04-16T18:02:12.295Z",
-  "url": null,
-  "deployed_at": null
+  "url": "https://proposal-apex-wealth-71c7b8.vercel.app",
+  "deployed_at": "2026-04-16T18:30:00.000Z"
 }
